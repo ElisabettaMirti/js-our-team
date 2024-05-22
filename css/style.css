@@ -16,3 +16,7 @@ header{
     width: 600px;
     margin: 0 auto;
 }
+
+.container>article.card{
+    margin-bottom: 2rem;
+}

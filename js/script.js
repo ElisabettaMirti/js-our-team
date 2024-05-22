@@ -36,6 +36,24 @@ const ourTeam = [
     }
 ]
 
+
+//stampa in console
 for (let key in ourTeam) {
-    console.log(ourTeam[key]);
+    console.log(key, ourTeam[key]);
+}
+
+
+//stampa elementi in pagina come stringhe
+const containerEl = document.querySelector('div.container'); 
+
+for (let i = 0; i < ourTeam.length; i++){
+    const cardEl = document.createElement('article');
+    cardEl.classList.add('card');
+    containerEl.appendChild(cardEl);
+    let membroTeam = ourTeam[i];
+    for (const key in ourTeam[i]) {
+        let pEl = document.createElement('p');
+            pEl.append(membroTeam[key]);
+            cardEl.appendChild(pEl);
+    }    
 }
