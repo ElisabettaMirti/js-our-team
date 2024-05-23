@@ -57,3 +57,11 @@ for (let i = 0; i < ourTeam.length; i++){
             cardEl.appendChild(pEl);
     }    
 }
+
+
+//Trovato metodo per inserire le immagini in pagina!
+
+let img = document.createElement("img"); 
+img.src = './img/wayne-barnett-founder-ceo.jpg'; 
+let src = document.querySelector("article.card"); 
+src.appendChild(img); 

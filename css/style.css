@@ -17,6 +17,19 @@ header{
     margin: 0 auto;
 }
 
+div.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .container>article.card{
     margin-bottom: 2rem;
+    width: 200px;
+}
+
+div.img,
+div.img>img{
+    width: 200px;
 }
